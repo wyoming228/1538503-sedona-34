@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -33,33 +34,33 @@
     </nav>
   </header>
   <main class="main-inner">
-    <section class="catalog-page-navigation">
-      <h1 class="catalog-page-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link breadcrumbs-link-logo" href="index.html"><img src="#"
-              alt="Логотип домашней страницы"></a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ul>
-    </section>
     <section class="catalog-filters">
+      <div class="catalog-page-navigation">
+        <h1 class="catalog-page-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-link-logo" href="index.html"><img src="#"
+                alt="Логотип домашней страницы"></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
       <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
       <form class="catalog-filters-filters" action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset class="catalog-filters-facilities">
           <legend class="catalog-filters-title">Инфраструктура:</legend>
-          <label><input type="checkbox" name="facilities" value="pool" checked>Бассейн</label>
-          <label><input type="checkbox" name="facilities" value="parking" checked>Парковка</label>
-          <label><input type="checkbox" name="facilities" value="wi-fi">Wi-Fi</label>
+          <label><input type="checkbox" name="facilities" value="pool" checked><span class="facilities-point">Бассейн</span></label>
+          <label><input type="checkbox" name="facilities" value="parking" checked><span class="facilities-point">Парковка</span></label>
+          <label><input type="checkbox" name="facilities" value="wi-fi"><span class="facilities-point">Wi-Fi</span></label>
         </fieldset>
         <fieldset class="catalog-filters-accommodation">
           <legend class="catalog-filters-title">Тип жилья:</legend>
-          <label><input type="radio" name="accommodation-type" value="hotel" checked>Гостиница</label>
-          <label><input type="radio" name="accommodation-type" value="motel">Отель</label>
+          <label><input type="radio" name="accommodation-type" value="hotel" checked><span class="facilities-point">Гостиница</span></label>
+          <label><input type="radio" name="accommodation-type" value="motel"><span class="facilities-point">Отель</span></label>
           <label><input type="radio" name="accommodation-type" value="
-            appartement">Апартаменты</label>
+            appartement"><span class="facilities-point">Апартаменты</span></label>
         </fieldset>
         <!-- Пока не разобрался как сделать двойной слайдер. Попробовал погуглить, но попадались готовые js решения. Вроде бы на 8 модуле Коля Ш. будут разъяснять этот момент если я правильно понял
           <label>Стоимость, ₽:(<output class="price">0</output>)
@@ -167,7 +168,7 @@
         <option value="8">8</option>
       </select>
     </section>
-    <section class="subscription">
+    <section class="subscription-catalog">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/courses" method="post">

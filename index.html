@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,28 +20,22 @@
           <a class="navigation-link current" href="#">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">О нас</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
+      <div class="navigation-list navigation-user">
           <a class="navigation-link" href="#">Поиск</a>
-        </li>
-        <li class="navigation-item">
           <a class="navigation-link" href="#">Избранное</a>
-        </li>
-        <li class="navigation-item">
           <a class="navigation-link">Хочу сюда</a>
-        </li>
-      </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
     <section class="page-hero">
-      <img src="#" alt="Добро пожаловать в Седону">
+      <img src="images/hero-welcome.svg" alt="Добро пожаловать в Седону" width="458" height="352">
       <h1 class="hero-title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h1>
       <h2 class="hero-title-points">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
@@ -48,9 +43,9 @@
     <section class="advantages">
       <ul class="advantages-list">
         <li class="advantages-item">
-          <h3 class="advantages-list-title white">Настоящий городок</h3>
-          <span class="advantages-number white">— №1 —</span><br>
-          <p class="advantages-description white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <h3 class="advantages-list-title advantages-list-title-white">Настоящий городок</h3>
+          <span class="advantages-number advantages-number-white">— №1 —</span><br>
+          <p class="advantages-description advantages-description-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
         <li class="advantages-item-image">
           <div class="advantages-image">
@@ -78,14 +73,14 @@
           </div>
         </li>
         <li class="advantages-item">
-          <h3 class="advantages-list-title white">Там есть
+          <h3 class="advantages-list-title advantages-list-title-white">Там есть
             мост дьявола</h3>
-          <span class="advantages-number">— №2 —</span><br>
-          <p class="advantages-description white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <span class="advantages-number advantages-number-white">— №2 —</span><br>
+          <p class="advantages-description advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
         <li class="advantages-item">
-          <h3 class="advantages-list-title">Там есть
-            мост дьявола</h3>
+          <h3 class="advantages-list-title">Небольшая
+            площадь</h3>
           <span class="advantages-number">— №3 —</span><br>
           <p class="advantages-description">Все достопримечательности находятся очень близко</p>
         </li>
@@ -108,11 +103,11 @@
       <p class="search-paragraph">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
         Седоне
       </p>
-      <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
     </section>
-    <section class="subscription">
-      <h2 class="subscription-title white">Подпишитесь на рассылку</h2>
-      <p class="subscription-paragraph white">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="subscription-index">
+      <h2 class="subscription-title-white">Подпишитесь на рассылку</h2>
+      <p class="subscription-paragraph-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <label class="visually-hidden" for="subscription-email">Подписка на рассылку</label>
         <input type="email" name="user-email" id="subscription-email" placeholder="Ваш e-mail">
