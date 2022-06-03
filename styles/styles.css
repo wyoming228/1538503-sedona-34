@@ -216,3 +216,16 @@ body {
   color:#333333;
 }
 
+.advantages-image-true{
+  width: 800px;
+  height: 384px;
+  background-image: url(../images/advantages-true-city.jpg)
+}
+
+.advantages-image-devil{
+  width: 800px;
+  height: 384px;
+  background-image: url(../images/advantages-devils-place.jpg)
+}
+
+
