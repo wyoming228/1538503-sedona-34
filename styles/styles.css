@@ -38,6 +38,7 @@ img {
   color: #333333;
   padding: 0 70px 0 70px;
   min-height: 65px;
+  display: flex;
 }
 
 .page-header-logo {
@@ -47,17 +48,54 @@ img {
 .navigation {
   font-size: 20px;
   line-height: 26px;
+  display: flex;
+  flex-grow: 1;
+  margin-left: 30px;
 }
 
 .navigation-list {
   list-style-type: none;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 .navigation-link {
   color: #000000;
   text-decoration: none;
   font-weight: 700;
+  display: block;
+  padding: 20px 17px 20px 17px;
+
+
+}
+
+.navigation-link-logo {
+  width: 42px;
+  height: 66px;
+  border: 1px black solid;
+  background-color:antiquewhite;
+}
+
+.navigation-button {
+  width: 130px;
+  display: block;
+  text-align: center;
+  background-color: #756157;
+  border-radius: 5%;
+  margin-left: 20px;
+
+}
+
+.navigation-button-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 8px 15px;
+  display: block;
 }
 
 .page-hero {
@@ -65,13 +103,13 @@ img {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  min-height: 434px;
+  height: 434px;
   padding-top: 51px;
 }
 
 .hero-text {
-  min-height: 282px;
   text-align: center;
+  padding-top: 63px;
 }
 
 .hero-title {
@@ -80,13 +118,15 @@ img {
   color: #000000;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0 0 31px 0;
 }
 
 .hero-title-points {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  color: color: #333333;
+  color:#333333;
+  margin: 0 0 90px 0;
 }
 
 .advantages-list-title {
@@ -133,18 +173,19 @@ img {
 
 .hotel-search {
   text-align: center;
-  height: 367px;
-  padding-top: 50px;
+  padding-bottom: 93px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 91px 0 29px 0;
 }
 
 .search-paragraph {
   line-height: 24px;
+  margin: 0 0 56px 0;
 }
 
 .button {
@@ -159,7 +200,12 @@ img {
   text-align: center;
   color: #FFFFFF;
   background-image: url(../images/subscription-background.jpg);
-  height: 411px;
+  padding: 94px 0 94px 0;
+}
+
+.light-blue {
+  background-color: #83B3D3;
+  opacity: 12%;
 }
 
 .subscription-title-white,
@@ -167,14 +213,18 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 0 29px 0;
 }
 
 .subscription-paragraph-white,
 subscription-paragraph {
   line-height: 26px;
   width: 476px;
-  margin: 0 auto;
+  margin: 0 auto 46px auto;
+}
 
+.subscription-paragraph {
+  margin: 0 0 46px 0;
 }
 
 .contact-phone {
@@ -186,17 +236,21 @@ subscription-paragraph {
   background-image: url(../images/catalog-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  color: #FFFFFF
+  color: #FFFFFF;
+  padding: 35px 70px 70px 70px;
 }
 
 .catalog-page-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
 }
 
 .breadcrumbs {
   list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -234,15 +288,15 @@ subscription-paragraph {
   text-decoration: none;
 }
 
-.hotels-list {
-  list-style-type: none;
-}
-
 .hotel-type,
 .hotel-price,
 page-amount {
   font-size: 18px;
   line-height: 21px;
+}
+
+.page-amount {
+  margin: 0;
 }
 
 .subscription-catalog {
@@ -251,6 +305,7 @@ page-amount {
   background-repeat: no-repeat;
   text-align: center;
   color: #333333;
+  padding: 94px 200px;
 }
 
 .advantages-image-true {
@@ -284,7 +339,6 @@ page-amount {
   */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
   margin: 0;
   padding: 0;
   align-items: center;
@@ -317,18 +371,16 @@ page-amount {
   height: 384px;
 }
 
-.navigation {
+.navigation-user {
+  margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .navigation-list {
   width: 390px;
   padding: 0;
   margin: 0;
-}
-
-.page-header {
-  display: flex;
 }
 
 .page-footer {
@@ -340,19 +392,16 @@ page-amount {
   align-items: center;
   display: grid;
   grid-template-columns: 116px 331px 115px;
-  gap: 247px;
+  gap: 236px;
   height: 120px;
-  padding: 0 72px 0 72px;
+  padding: 0 70px 0 70px;
 }
 
 .social-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.footer-social {
-  width: 116px;
+  display: flex;
 }
 
 .contact {
@@ -387,20 +436,49 @@ page-amount {
   display: flex;
 }
 
+.catalog-sorting {
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+
+.catalog-sorting-select {
+  margin-left: auto;
+  width: 290px;
+  height: 49px;
+}
+
+.sorting-view {
+  display: flex;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sorting-view-item {
+  min-width: 48px;
+  min-height: 48px;
+  background-color:antiquewhite;
+  border: 1px solid black;
+}
+
 .catalog-sorting-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 56px;
+  align-items: center;
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .hotel-card {
-  width: 340px;
+  padding: 20px;
 }
 
 .contact-phone {
@@ -419,15 +497,67 @@ page-amount {
 
 .pagination {
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  min-width: 60px;
+  min-height: 60px;
+  background-color: #82B3D3;
+  margin-right: 8px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 20px;
+  display: flex;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .hero-welcome-image {
   margin: 0 auto;
 }
 
+.pagination-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+  margin: auto;
+}
+
+.pagination-current {
+  color: #000000;
+}
+
+.pagination-item-current {
+  background-color: #F2F2F2;
+}
+
+.page-amount {
+  align-self: center;
+  min-width: 175px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 270px;
+  }
+
+.page-amount-select {
+  width: 160px;
+}
+
 .advantages-item-wrapper {
   max-width: 230px;
   margin: 0 auto 0 auto;
+}
+
+.social-list-item {
+  width: 47px;
+  height: 40px;
+  background-color:bisque;
+  border: 1px solid black;
 }
 
 .visually-hidden {
@@ -440,5 +570,4 @@ page-amount {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
