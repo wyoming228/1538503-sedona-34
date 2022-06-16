@@ -134,6 +134,9 @@ img {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 0 30px 0;
+  padding-top: 92px;
+  color: #000000;
 }
 
 .advantages-item:first-child,
@@ -141,22 +144,20 @@ img {
   background-color: #82B3D3;
 }
 
-.advantages-list-title {
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000
-}
-
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+  padding-bottom: 92px;
 }
 
 .advantages-list-title-white {
@@ -173,14 +174,15 @@ img {
 
 .hotel-search {
   text-align: center;
-  padding-bottom: 93px;
+  padding-top: 92px;
+  padding-bottom: 92px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 91px 0 29px 0;
+  margin: 0 0 29px 0;
 }
 
 .search-paragraph {
@@ -358,12 +360,15 @@ page-amount {
 }
 
 .advantages-item {
-  height: 384px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
 
+.title-long {
+  padding-top: 102px;
+}
+
+.advantages-description-long {
+  padding-bottom: 102px;
 }
 
 .advantages-picture {
@@ -374,7 +379,9 @@ page-amount {
 .navigation-user {
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 264px;
 }
 
 .navigation-list {
@@ -384,17 +391,11 @@ page-amount {
 }
 
 .page-footer {
-  /*
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  */
   align-items: center;
   display: grid;
-  grid-template-columns: 116px 331px 115px;
-  gap: 236px;
-  height: 120px;
-  padding: 0 70px 0 70px;
+  grid-template-columns: 141px 331px 115px;
+  column-gap: 236px;
+  padding: 40px 70px 30px 70px;
 }
 
 .social-list {
@@ -402,6 +403,7 @@ page-amount {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contact {
@@ -416,6 +418,7 @@ page-amount {
 .catalog-filters-facilities {
   min-width: 151px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   border: none;
 }
@@ -423,6 +426,7 @@ page-amount {
 .catalog-filters-accommodation {
   min-width: 146px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   border: none;
 }
@@ -444,7 +448,7 @@ page-amount {
 .catalog-sorting-select {
   margin-left: auto;
   width: 290px;
-  height: 49px;
+  padding: 18px 0 18px 0;
 }
 
 .sorting-view {
@@ -498,8 +502,10 @@ page-amount {
 .pagination {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 400px;
 }
 
 .pagination-item {
@@ -557,7 +563,6 @@ page-amount {
   width: 47px;
   height: 40px;
   background-color:bisque;
-  border: 1px solid black;
 }
 
 .visually-hidden {
