@@ -60,13 +60,6 @@ img {
   margin: 0 auto 0 auto;
 }
 
-.newsletter-button-text {
-  padding: 12px 22px;
-  display: block;
-  font-size: 20px;
-  line-height: 36px;
-}
-
 .newsletter-form button {
   text-transform: uppercase;
   border: 0;
@@ -76,6 +69,8 @@ img {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .newsletter-input-area {
@@ -133,17 +128,12 @@ img {
   margin-left: 20px;
   border: 0;
   border-radius: 5px;
-
-}
-
-.navigation-button-text {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   padding: 8px 15px;
-  display: block;
 }
 
 .page-hero {
@@ -254,8 +244,7 @@ img {
 }
 
 .light-blue {
-  background-color: #83B3D3;
-  opacity: 12%;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .subscription-title-white,
@@ -327,17 +316,17 @@ subscription-paragraph {
   text-transform: uppercase;
 }
 
-.hotel-title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  margin: 0;
-}
-
 .hotel-title-link {
   grid-column-start: 1;
   grid-column-end: 3;
   text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hotel-card-image {
+  display: block;
 }
 
 .hotel-image {
