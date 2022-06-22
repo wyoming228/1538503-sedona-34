@@ -357,6 +357,7 @@ page-amount {
   width: 800px;
   height: 384px;
   background-image: url(../images/advantages-true-city.jpg);
+
 }
 
 .advantages-image-devil {
@@ -664,6 +665,7 @@ page-amount {
 .advantages-item-wrapper {
   max-width: 230px;
   margin: 0 auto 0 auto;
+  
 }
 
 .social-list-item {
