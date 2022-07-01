@@ -17,23 +17,23 @@
         </a>
       </div>
       <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О нас</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link current">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="navigation-list">
+          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link" href="#">О Седоне</a>
+          <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+        </div>
         <div class="navigation-user">
-          <a class="navigation-link-logo" href="#"></a>
-          <a class="navigation-link-logo" href="#"></a>
+          <a class="navigation-link-logo" href="#">
+            <span class="visually-hidden">Поиск</span>
+
+          </a>
+          <a class="navigation-link-logo" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <span class="favorite-counter">12</span>
+          </a>
         </div>
         <div class="navigation-button-container">
-          <a class="navigation-button">Хочу сюда!</a>
+          <a class="navigation-button button-brown">Хочу сюда!</a>
         </div>
       </nav>
     </header>
@@ -42,9 +42,15 @@
         <div class="catalog-page-navigation">
           <h1 class="catalog-page-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-logo" href="index.html"><span class="visually-hidden">На
-                  главную</span></a>
+            <li class="breadcrumbs-item breadcrumbs-homepage">
+              <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">На
+                  главную</span>
+                <svg class="homepage-logo" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" />
+                </svg>
+              </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -82,25 +88,18 @@
       <section class="catalog-sorting">
         <div class="catalog-wrapper">
           <div class="catalog-sorting-container">
-            <h2 class="visually-hidden" hidden>Карточки гостиниц</h2>
+            <h2 class="visually-hidden">Карточки гостиниц</h2>
             <span class="search-results">Найдено гостиниц: 38</span>
             <select class="catalog-sorting-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <ul class="sorting-view">
-              <li class="sorting-view-item">
-                <a class="button button-cards button-current" href="#"></a>
-              </li>
-              <li class="sorting-view-item">
-                <a class="button button-single" href="#">
-                </a>
-              </li>
-              <li class="sorting-view-item">
-                <a class="button button-list" href="#"></a>
-              </li>
-            </ul>
+            <div class="sorting-view">
+              <a class="card-grid-toggle group-toggle toggle-current" href="#"></a>
+              <a class="card-grid-toggle single-toggle" href="#">
+                <a class="card-grid-toggle list-toggle" href="#"></a>
+            </div>
           </div>
           <ul class="hotels-list">
             <li class="hotel-card">
@@ -114,9 +113,25 @@
                 </a>
                 <span class="hotel-type">Гостиница</span>
                 <span class="hotel-price">От 4000 ₽</span>
-                <a class="card-button"><span class="card-button-text">Подробнее</span></a>
-                <a class="favorites"><span class="favotites-text">В избранное</span></a>
-                <span class="hotel-rate-picture"><img src="#" alt="Рейтинг гостиницы"></span>
+                <a class="card-button button-brown"><span class="card-button-text">Подробнее</span></a>
+                <a class="favorites button-blue"><span class="favotites-text">В избранное</span></a>
+                <span class="hotel-rate-picture"><svg aria-hidden="true" focusable="false" width="18" height="17"
+                    viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                </span>
                 <span class="hotel-rate">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -129,9 +144,25 @@
                 <a class="hotel-title-link" href="#">Villas at Poco Diablo</a>
                 <span class="hotel-type">Гостиница</span>
                 <span class="hotel-price">От 5000 ₽</span>
-                <a class="card-button"><span class="card-button-text">Подробнее</span></a>
+                <a class="card-button button-brown"><span class="card-button-text">Подробнее</span></a>
                 <a class="favorites favorites-selected"><span class="favotites-text">В избранном</span></a>
-                <span class="hotel-rate-picture"><img src="#" alt="Рейтинг гостиницы"></span>
+                <span class="hotel-rate-picture"><svg aria-hidden="true" focusable="false" width="18" height="17"
+                    viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                </span>
                 <span class="hotel-rate">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -146,9 +177,21 @@
                 </a>
                 <span class="hotel-type">Гостиница</span>
                 <span class="hotel-price">От 2500 ₽</span>
-                <a class="card-button"><span class="card-button-text">Подробнее</span></a>
-                <a class="favorites"><span class="favotites-text">В избранное</span></a>
-                <span class="hotel-rate-picture"><img src="#" alt="Рейтинг гостиницы"></span>
+                <a class="card-button button-brown"><span class="card-button-text">Подробнее</span></a>
+                <a class="favorites button-blue"><span class="favotites-text">В избранное</span></a>
+                <span class="hotel-rate-picture"><svg aria-hidden="true" focusable="false" width="18" height="17"
+                    viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                </span>
                 <span class="hotel-rate">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -163,9 +206,18 @@
                 </a>
                 <span class="hotel-type">Гостиница</span>
                 <span class="hotel-price">От 1500 ₽</span>
-                <a class="card-button"><span class="card-button-text">Подробнее</span></a>
-                <a class="favorites"><span class="favotites-text">В избранное</span></a>
-                <span class="hotel-rate-picture"><img src="#" alt="Рейтинг гостиницы"></span>
+                <a class="card-button button-brown"><span class="card-button-text">Подробнее</span></a>
+                <a class="favorites button-blue"><span class="favotites-text">В избранное</span></a>
+                <span class="hotel-rate-picture">
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                  <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                  </svg>
+                </span>
                 <span class="hotel-rate">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -191,7 +243,7 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-            <p class="page-amount">Гостиниц на странице:</p>
+            <span class="page-amount">Гостиниц на странице:</span>
             <select class="page-amount-select" aria-label="Гостиниц на странице" name="page-amount">
               <option value="4">4</option>
               <option value="8">8</option>
@@ -206,7 +258,7 @@
           <label class="visually-hidden" for="subscription-email">Подписка на рассылку</label>
           <input class="newsletter-input-area newsletter-input-catalog" type="email" name="user-email"
             id="subscription-email" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -215,25 +267,47 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-list">
           <li class="social-list-item">
-            <a class="social-icons-vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в
-                VK</span></a>
+            <a class="social-item" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в
+                VK</span>
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="24" height="15" viewBox="0 0 24 15"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.45 1.448c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V1.448c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45.788 4.198.5 3.527.5H.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.719 8.008 4.719 1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.749 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" />
+              </svg>
+            </a>
           </li>
           <li class="social-list-item">
-            <a class="social-icons-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в
-                Telegram</span></a>
+            <a class="social-item" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в
+                Telegram</span>
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.785.6.841 6.747c-1.088.437-1.082 1.044-.2 1.315L4.735 9.34l9.471-5.976c.448-.273.857-.126.521.172l-7.674 6.926h-.001.001l-.282 4.22c.414 0 .596-.19.828-.413l1.989-1.934 4.135 3.055c.763.42 1.31.204 1.5-.706L17.938 1.89C18.216.775 17.513.27 16.786.599Z" />
+              </svg>
+            </a>
           </li>
           <li class="social-list-item">
-            <a class="social-icons-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
-                class="visually-hidden">Мы в YouTube</span></a>
+            <a class="social-item" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в
+                YouTube</span>
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="22" height="17" viewBox="0 0 22 17"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.607 0H3.174C1.314 0 0 1.594 0 3.4v10.094C0 15.406 1.313 17 3.174 17h15.652C20.468 17 22 15.406 22 13.6V3.4C21.781 1.594 20.468 0 18.607 0ZM7.662 12.537V4.463L14.995 8.5l-7.333 4.037Z" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="contact">
-        <h2 class="visually-hidden" hidden>Телефон для связи</h2>
-        <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <h2 class="visually-hidden">Телефон для связи</h2>
+        <a class="contact-phone" href="tel:+78128121212"><span class="contact-phone-number">+7 (812)
+            812-12-12</span></a>
       </div>
-      <a class="footer-logo" href="https://htmlacademy.ru/"><img src="images/footer-logo.svg"
-          alt="Логотип платформы HTML Academy" width="115" height="34"></a>
+      <a class="footer-logo" href="https://htmlacademy.ru/"><svg class="footer-logo-image" width="115" height="33"
+          viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
+        </svg></a>
     </footer>
   </div>
 </body>
