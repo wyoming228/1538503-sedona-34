@@ -142,7 +142,6 @@ img {
   position: absolute;
   content: "";
   right: 17px;
-  bottom: 20px;
   left: 17px;
   bottom: -1px;
   height: 3px;
@@ -690,7 +689,7 @@ page-amount {
 }
 
 .footer-logo {
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
 .footer-logo-image {
@@ -747,6 +746,7 @@ page-amount {
 }
 
 .contact-phone-number {
+  line-height: 40px;
   color: #000000;
 }
 
