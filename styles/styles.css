@@ -462,7 +462,7 @@ img {
 }
 
 .subscription-paragraph-white,
-subscription-paragraph {
+.subscription-paragraph {
   line-height: 26px;
   width: 476px;
   margin: 0 auto 45px auto;
@@ -611,7 +611,7 @@ subscription-paragraph {
 
 .hotel-type,
 .hotel-price,
-page-amount {
+.page-amount {
   font-size: 18px;
   line-height: 21px;
 }
