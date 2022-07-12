@@ -26,6 +26,7 @@ body {
   color: #333333;
   background-color: #FFFFFF;
   margin: 0;
+  min-width: 1280px;
 }
 
 img {
@@ -557,6 +558,7 @@ subscription-paragraph {
   line-height: 36px;
   text-transform: uppercase;
   margin-right: 191px;
+  max-width: ;
 }
 
 .group-toggle {
@@ -1174,6 +1176,7 @@ page-amount {
   justify-content: space-around;
   margin-bottom: 56px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hotels-list {
@@ -1298,6 +1301,7 @@ page-amount {
 .pagination-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-wrapper {
