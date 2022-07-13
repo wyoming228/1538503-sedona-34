@@ -187,6 +187,7 @@ img {
 }
 
 .page-hero {
+  background-color: #68A2CA;
   background-image: url(../images/hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -481,6 +482,7 @@ img {
 }
 
 .catalog-filters {
+  background-color:#68A2CA;
   background-image: url(../images/catalog-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -624,13 +626,12 @@ img {
   color: #333333;
   padding: 94px 200px;
 }
-
+/*
 .advantages-image-true {
   width: 800px;
   height: 384px;
-  background-image: url(../images/advantages-true-city.jpg);
-
 }
+*/
 
 .advantages-image-devil {
   width: 800px;
@@ -665,11 +666,19 @@ img {
 .true-image {
   grid-column-start: 2;
   grid-column-end: 4;
+  background-image: url("../images/advantages-true-city.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .devil-image {
   grid-column-start: 1;
   grid-column-end: 3;
+  background-image: url("../images/advantages-devils-place.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .advantages-item {
@@ -1302,6 +1311,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .catalog-wrapper {
@@ -1390,7 +1400,8 @@ img {
   min-width: 175px;
   font-size: 18px;
   line-height: 21px;
-  margin-left: 220px;
+  position: absolute;
+  right: 212px;
 }
 
 .advantages-item-wrapper {
