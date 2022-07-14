@@ -241,11 +241,6 @@ img {
   color: #000000;
 }
 
-.advantages-item:first-child,
-.advantages-item:nth-child(7) {
-  background-color: #82B3D3;
-}
-
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
@@ -654,14 +649,6 @@ img {
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
-}
-
-.true-image {
-  height: auto;
-}
-
-.devil-image {
-  height: auto;
 }
 
 .true-image-pic {
@@ -1777,4 +1764,10 @@ img {
 
 .true-image, .devil-image {
   width: 800px;
+}
+
+.item-pic {
+  display: flex;
+  width: 1200px;
+  background-color: #82B3D3;
 }
